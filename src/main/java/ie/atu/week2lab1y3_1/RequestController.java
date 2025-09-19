@@ -11,6 +11,7 @@ public class RequestController {
     {
             return "Hello";
     }
+
     @GetMapping("/helloAlso")
     public String helloAlso()
     {
@@ -22,6 +23,7 @@ public class RequestController {
     {
         return "Hello " + name + "!";
     }
+
     @GetMapping("/details")
     public String details(@RequestParam String name, @RequestParam int age) {
         return "Name: " + name + ", Age: " + age;
